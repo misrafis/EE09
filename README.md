@@ -1,2 +1,2 @@
-# EE09
-Rozwiązania arkuszy EE09/E14
+# EE.09
+Rozwiązania arkuszy EE.09/E.14
