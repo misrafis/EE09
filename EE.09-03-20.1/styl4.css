@@ -1,0 +1,55 @@
+* {
+	font-family: Garamond;
+}
+
+.baner-lewy, .baner-prawy {
+	background-color: rgb(95, 158, 160);
+	color: yellow;
+	width: 20%;
+	height: 90px;
+	text-align: right;
+}
+
+.baner-srodkowy {
+	background-color: rgb(95, 158, 160);
+	color: yellow;
+	width: 60%;
+	height: 90px;
+	text-align: center;
+}
+
+.lewy, .prawy {
+	background-color: rgb(175, 238, 238);
+	width: 50%;
+	height: 250px;
+}
+
+.glowny {
+	background-color: rgb(95, 158, 160);
+	padding: 30px;
+}
+
+.stopka {
+	background-color: rgb(175, 238, 238);
+	padding: 10px;
+}
+
+table {
+	border: 2px dotted green;
+	width: 100%;
+	
+}
+
+td {
+	border: 2px dotted green;
+}
+
+th {
+	border: 2px dtted green;
+	background-color: green;
+	color: yellow;
+}
+
+.flex {
+	display: flex;
+}
