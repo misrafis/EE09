@@ -1,0 +1,42 @@
+* {
+	font-family: Verdana;
+	color: #2F2F2F;
+}
+
+.baner {
+	background-color: #DCDCDC;
+	width: 15%;
+	height: 80px;
+}
+
+.baner:first-child {
+	background-color: #DCDCDC;
+	width: 55%;
+	height: 80px;
+	text-align: center;
+}
+
+.lewy {
+	background-color: #808080;
+	width: 30%;
+	height: 450px;
+}
+
+.prawy {
+	background-color: #808080;
+	width: 70%;
+	height: 450px;
+}
+
+.stopka {
+	background-color: #DCDCDC;
+	text-align: center;
+}
+
+input {	
+	color: Gray;
+}
+
+.flex {
+	display: flex;
+}
