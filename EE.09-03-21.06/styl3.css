@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana;
+}
+
+.baner:first-of-type {
+    background-color: #29434E;
+    color: white;
+    text-align: center;
+    width: 70%;
+    height: 70px;
+}
+
+.baner:last-of-type {
+    background-color: #29434E;
+    color: white;
+    width: 30%;
+    height: 70px;
+}
+
+.lista {
+    background-color: #B0BEC5;
+    height: 320px;
+    overflow: scroll;
+}
+
+.stopka {
+    background-color: #29434E;
+    color: white;
+}
+
+.film {
+    padding: 5px;
+    width: 226px;
+    height: 280px;
+}
+
+h3 {
+    background-color: #545E7A;
+    color: white;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
