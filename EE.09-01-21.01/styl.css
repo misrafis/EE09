@@ -1,0 +1,50 @@
+.baner {
+	color: white;
+	text-align: center;
+	height: 370px;
+}
+
+.mecz {
+	color: white;
+	text-align: center;
+	width: 200px;
+	margin: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+.mecz:hover {
+	border: 1px solid white;
+}
+
+.glowny {
+	background-color: WhiteSmoke;
+	height: 50px;
+}
+.lewy {
+	background-color: WhiteSmoke;
+	width: 70%;
+	height: 230px;
+}
+
+.prawy {
+	background-color: WhiteSmoke;
+	width: 30%;
+	height: 230px;
+	text-align: right;
+}
+
+body {
+	font-family: Tahoma;
+	background-color: Crimson;
+}
+
+h2 {
+	text-align: center;
+	letter-spacing: 7px;
+	text-transform: capitalize;
+}
+
+.flex {
+	display: flex;
+}
