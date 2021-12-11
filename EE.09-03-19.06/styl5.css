@@ -1,0 +1,41 @@
+* {
+	font-family: Tahoma;
+}
+.lewy, .prawy {
+	background-color: RosyBrown;
+	color: white;
+	width: 30%;
+	height: 200px;
+}
+
+.srodkowy {
+	background-color: RosyBrown;
+	color: white;
+	width: 40%;
+	height: 200px;
+	text-align: center;
+}
+
+.glowny {
+	background-color: Wheat;
+	padding: 50px;
+}
+
+.stopka {
+	background-color: RosyBrown;
+	color: white;
+	padding: 5px;
+	text-align: center;
+}
+
+a {
+	border: 2px solid DarkRed;
+	background-color: Salmon;
+	color: DarkRed;
+	padding: 20px;
+	line-height: 200px;
+}
+
+.flex {
+	display: flex;
+}
