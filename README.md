@@ -1,2 +1,2 @@
 # EE.09
-Rozwiązania arkuszy EE.09/E.14
+Rozwiązania do egzaminów EE.09 / E.14
