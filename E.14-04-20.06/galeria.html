@@ -40,6 +40,23 @@
 
         obrazki.forEach(el => {
             el.addEventListener("mouseover", fn = () => {
+                const obrazek = el.name;
+
+                switch (obrazek) {
+                    case "choinka":
+                        wynik.textContent= "Wybrałeś choinkę. Cena 10zł";
+                        break;
+                    case "mikolaj":
+                        wynik.textContent= "Wybrałeś Mikołaja. Cena 12zł";
+                        break;
+                    case "renifer":
+                        wynik.textContent= "Wybrałeś renifera. Cena 8zł";
+                        break;
+                    default:
+                        break;
+                }
+
+                /*
                 if (el.name == "choinka") {
                     wynik.textContent = "Wybrałeś choinkę. Cena 10zł";
                 }
@@ -51,6 +68,7 @@
                 if (el.name == "renifer") {
                     wynik.textContent = "Wybrałeś renifera. Cena 8zł";
                 }
+                */
             })
 
             el.addEventListener("mouseout", fn2 = () => {
