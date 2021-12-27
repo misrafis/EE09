@@ -12,7 +12,7 @@
 	</div>
 	<div class="flex">
 			<?php
-				$pol = mysqli_connect("localhost", "root", "", "baza6");
+				$pol = mysqli_connect("localhost", "root", "", "egzamin");
 				$zap = "SELECT zespol1, zespol2, wynik, data_rozgrywki FROM rozgrywka WHERE zespol1='EVG'";
 				$wynik = mysqli_query($pol, $zap);
 				
@@ -37,7 +37,7 @@
 			<input type="submit" value="Sprawdź">
 			<ul>
 				<?php
-					$pol2 = mysqli_connect("localhost", "root", "", "baza6");
+					$pol2 = mysqli_connect("localhost", "root", "", "egzamin");
 				
 					if(isset($_POST['pozycja']) && $_POST['pozycja'] != "") {
 						$pozycja = $_POST['pozycja'];

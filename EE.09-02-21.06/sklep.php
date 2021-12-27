@@ -8,7 +8,7 @@
 <body>
 	<?php
 		function skrypt1() {
-			$conn = mysqli_connect("localhost", "root", "", "baza2");
+			$conn = mysqli_connect("localhost", "root", "", "dane2");
 			$sql = "SELECT nazwa, ilosc, opis, cena, zdjecie FROM produkty WHERE rodzaje_id=1 OR rodzaje_id=2";
 			
 			$result = mysqli_query($conn, $sql);
@@ -26,7 +26,7 @@
 		};
 		
 		function skrypt2() {
-			$conn = mysqli_connect("localhost", "root", "", "baza2");
+			$conn = mysqli_connect("localhost", "root", "", "dane2");
 			if(!empty($_POST["nazwa"]) && !empty($_POST["cena"])) {
 				$nazwa = $_POST["nazwa"];
 				$cena = $_POST["cena"];

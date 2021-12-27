@@ -28,7 +28,7 @@
 			<th>status</th>
 			</tr>
 			<?php
-			$conn = mysqli_connect("localhost", "root", "", "baza5");
+			$conn = mysqli_connect("localhost", "root", "", "egzamin");
 			$sql = "SELECT czas, kierunek, nr_rejsu, status_lotu FROM przyloty ORDER BY czas ASC";
 			$result = mysqli_query($conn, $sql);
 			

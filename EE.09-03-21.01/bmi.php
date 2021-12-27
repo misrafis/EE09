@@ -22,7 +22,7 @@
 			<th>Wartość maksymalna</th>
 		</tr>
 		<?php
-			$conn = mysqli_connect("localhost", "root", "", "baza8");
+			$conn = mysqli_connect("localhost", "root", "", "egzamin");
 			$zap = "SELECT informacja, wart_min, wart_max FROM bmi";
 			$res = mysqli_query($conn, $zap);
 			
@@ -47,7 +47,7 @@
 			<input type="submit" value="Oblicz i zapamiętaj wynik">
 			</form>
 			<?php
-				$conn2 = mysqli_connect("localhost", "root", "", "baza8");
+				$conn2 = mysqli_connect("localhost", "root", "", "egzamin");
 				
 				if((isset($_POST['waga']) && $_POST['waga']!="") && (isset($_POST['wzrost']) && $_POST['wzrost']!="")) {
 					$waga = $_POST['waga'];

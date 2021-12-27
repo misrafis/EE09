@@ -36,7 +36,7 @@
 			</tr>
 			<tr>
 <?php
-	$polaczenie = mysqli_connect("localhost", "root", "", "baza5");
+	$polaczenie = mysqli_connect("localhost", "root", "", "prognoza");
 	$zapytanie = "SELECT * FROM pogoda WHERE miasta_id=2 ORDER BY data_prognozy DESC";
 	
 	$kwerenda = mysqli_query($polaczenie, $zapytanie);

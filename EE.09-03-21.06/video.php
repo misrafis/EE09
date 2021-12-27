@@ -8,7 +8,7 @@
 <body>
         <?php
             function skrypt1() {
-                $conn = mysqli_connect("localhost", "root", "", "baza3");
+                $conn = mysqli_connect("localhost", "root", "", "dane3");
                 $sql = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE id=18 OR id=22 OR id=23 OR id=25";
 
                 $result = mysqli_query($conn, $sql);
@@ -25,7 +25,7 @@
             };
 
             function skrypt2() {
-                $conn = mysqli_connect("localhost", "root", "", "baza3");
+                $conn = mysqli_connect("localhost", "root", "", "dane3");
                 $sql = "SELECT id, nazwa, opis, zdjecie FROM produkty WHERE rodzaje_id=12";
 
                 $result = mysqli_query($conn, $sql);

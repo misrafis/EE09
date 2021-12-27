@@ -31,7 +31,7 @@
 	</footer>
 	<?php
 		function skrypt() {
-			$conn = mysqli_connect("localhost", "root", "", "baza1");
+			$conn = mysqli_connect("localhost", "root", "", "dane");
 			$sql = "SELECT imie, nazwisko, opis, zdjecie FROM osoby WHERE hobby_id=1 OR hobby_id=2 OR hobby_id=6";
 			
 			$result = mysqli_query($conn, $sql);

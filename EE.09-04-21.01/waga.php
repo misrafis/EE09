@@ -48,7 +48,7 @@
 	<?php
 	
 		function skrypt1() {
-			$conn = mysqli_connect("localhost", "root", "", "baza");
+			$conn = mysqli_connect("localhost", "root", "", "egzamin");
 			
 			if( (!empty($_POST['waga'])) && (!empty($_POST['wzrost'])) ) {
 				$waga = $_POST['waga'];
@@ -86,7 +86,7 @@
 		};
 		
 		function skrypt2() {
-			$conn = mysqli_connect("localhost", "root", "", "baza");
+			$conn = mysqli_connect("localhost", "root", "", "egzamin");
 			$sql = "SELECT id, informacja, wart_min FROM bmi";
 			$result = mysqli_query($conn, $sql);
 			

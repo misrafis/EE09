@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-        $conn = mysqli_connect("localhost", "root", "", "baza4");
+        $conn = mysqli_connect("localhost", "root", "", "dane4");
     ?>
     <header class="baner">
         <h3>Portal Społecznościowy - panel administratora</h3>

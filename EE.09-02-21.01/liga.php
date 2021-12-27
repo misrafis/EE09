@@ -27,7 +27,7 @@
 		<div class="prawy">
 			<ol>
 			<?php
-			$conn = mysqli_connect("localhost", "root", "", "baza7");
+			$conn = mysqli_connect("localhost", "root", "", "egzamin");
 			
 			if(isset($_POST['pozycja'])) {
 				$pozycja = $_POST['pozycja'];
@@ -49,7 +49,7 @@
 	</div>
 	<div class="flex">
 	<?php
-	$conn2 = mysqli_connect("localhost", "root", "", "baza7");
+	$conn2 = mysqli_connect("localhost", "root", "", "egzamin");
 	$query2 = "SELECT zespol, punkty, grupa FROM liga ORDER BY punkty DESC";
 	$result2 = mysqli_query($conn2, $query2);
 	
