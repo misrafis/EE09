@@ -1,0 +1,18 @@
+CREATE TABLE zamowienia (
+    id int UNSIGNED NOT NULL,
+    imie text NULL,
+    nazwisko text NULL,
+    adres_email text NULL,
+    liczba_choinek int NULL,
+    liczba_mikolajow int NULL,
+    liczba_reniferow int NULL,
+    info boolean NULL
+)
+
+ALTER TABLE zamowienia ADD PRIMARY KEY (id)
+
+CREATE USER klient@localhost IDENTIFIED BY "klient123"
+
+GRANT INSERT ON zamowienia TO klient@localhost
+
+INSERT INTO zamowienia(imie, nazwisko, adres_email) VALUES ("Jan", "Kowalski", "jKowalski@poczta.pl")

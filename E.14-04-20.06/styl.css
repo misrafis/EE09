@@ -1,0 +1,38 @@
+body {
+    font-family: Garamond;
+    color: white;
+    text-align: center;
+}
+
+.baner, .stopka {
+    background-color: forestgreen;
+    padding: 10px;
+}
+
+.lewy, .prawy {
+    background-color: forestgreen;
+    height: 490px;
+    width: 25%;
+    font-size: 30px;
+}
+
+.srodkowy {
+    background-color: chocolate;
+    height: 490px;
+    width: 50%;
+    font-size: 25px;
+}
+
+.srodkowy img {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+
+input, button {
+    color: green;
+}
+
+main {
+    display: flex;
+}

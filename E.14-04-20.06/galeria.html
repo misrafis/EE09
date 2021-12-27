@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <title>Sklep</title>
+</head>
+<body>
+    <header class="baner">
+        <h1>Ozdoby - sklep</h1>
+    </header>
+
+    <main>
+        <section class="lewy">
+            <h2>OZDOBY</h2>
+            <a href="galeria.html">Galeria</a>
+            <a href="zamowienie.php">Zamówienie</a>
+        </section>
+
+        <section class="srodkowy">
+            <img src="choinka.jpg" alt="ozdoby choinkowe" class="obrazek" name="choinka">
+            <img src="mikolaj.jpg" alt="ozdoby choinkowe" class="obrazek" name="mikolaj">
+            <img src="renifer.jpg" alt="ozdoby choinkowe" class="obrazek" name="renifer">
+            <p>Wybierz ozdobę w kółku</p>
+            <p id="wynik"></p>
+        </section>
+
+        <section class="prawy">
+            <img src="animacja.gif" alt="">
+        </section>
+    </main>
+
+    <footer class="stopka">
+        <h3>Autor strony: 00000000000</h3>
+    </footer>
+</body>
+    <script>
+        const obrazki = document.querySelectorAll(".obrazek");
+        const wynik = document.querySelector("#wynik");
+
+        obrazki.forEach(el => {
+            el.addEventListener("mouseover", fn = () => {
+                if (el.name == "choinka") {
+                    wynik.textContent = "Wybrałeś choinkę. Cena 10zł";
+                }
+
+                if (el.name == "mikolaj") {
+                    wynik.textContent = "Wybrałeś Mikołaja. Cena 12zł";
+                }
+
+                if (el.name == "renifer") {
+                    wynik.textContent = "Wybrałeś renifera. Cena 8zł";
+                }
+            })
+
+            el.addEventListener("mouseout", fn2 = () => {
+                wynik.textContent = "";
+            })
+        })
+    </script>
+</html>
