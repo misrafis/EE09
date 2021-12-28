@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi kosmetyczne</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+        <aside>
+            <article class="lewy">
+                <h2>W ofercie</h2>
+                <ul>
+                    <li><a href="twarz.html">Zabiegi na twarz</a>
+                        <ol>
+                            <li>Piling</li>
+                            <li>Maska</li>
+                            <li>Regulacja brwi</li>
+                        </ol>
+                    </li>
+                    <li>Masaż</li>
+                    <li>Diety oczyszczające</li>
+                </ul>
+                <a href="index.html">Do strony głównej</a>
+            </article>
+
+            <article class="lewy">
+                <img src="obraz1.jpg" alt="Salon Kosmetyczny">
+            </article>
+        </aside>
+        
+        <section>
+            <article class="prawy">
+                <h1>Salon kosmetyczny</h1>
+            </article>
+            
+            <article class="prawy">
+                <h2>Sprawdź cenę swojej wizyty</h2>
+                <input type="checkbox" name="" class="zabiegi"><span>Piling</span><br>
+                <input type="checkbox" name="" class="zabiegi"><span>Maska</span><br>
+                <input type="checkbox" name="" class="zabiegi"><span>Masaż twarzy</span><br>
+                <input type="checkbox" name="" class="zabiegi"><span>Regulacja brwi</span><br>
+                <button id="przycisk">Sprawdź cenę</button>
+                <p id="wynik"></p>
+            </article>
+        </section>
+
+    <footer class="stopka">
+        <p>Autor: 00000000000</p>
+    </footer>
+</body>
+
+    <script>
+        const zabiegi = document.querySelectorAll(".zabiegi");
+        const przycisk = document.querySelector("#przycisk");
+        const wynik = document.querySelector("#wynik");
+        const ceny = [45, 30, 20, 5];
+        let cena = 0;
+
+        const fn = () => {
+            zabiegi.forEach((el, i) => {
+                if (el.checked) {
+                    cena += ceny[i];
+                }
+            })
+            wynik.textContent = `Cena zabiegów: ${cena}`;
+
+            cena = 0;
+        }
+
+        przycisk.addEventListener("click", fn);
+    </script>
+
+</html>
