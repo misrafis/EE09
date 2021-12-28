@@ -1,0 +1,66 @@
+body {
+    font-family: Helvetica;
+}
+
+.lewy:first-of-type {
+    height: 400px;
+    background-color: snow;
+    text-align: center;
+}
+
+.lewy:last-of-type {
+    height: 400px;
+    background-color: snow;
+    font-size: 150%;
+}
+
+.prawy:first-of-type {
+    height: 150px;
+    background-color: steelblue;
+    text-align: center;
+}
+
+.prawy:nth-child(2) {
+    height: 350px;
+    background-color: steelblue;
+    color: white;
+}
+
+.prawy:last-of-type {
+    height: 300px;
+    background-color: snow;
+    text-align: center;
+}
+
+.stopka {
+    background-color: steelblue;
+    color: white;
+    clear: both;
+}
+
+h2 {
+    font-size: 250%;
+}
+
+img {
+    padding: 4px;
+}
+
+img:hover {
+    padding: 3px;
+    border: 1px solid steelblue;
+}
+
+main, aside {
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+}

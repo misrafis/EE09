@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Usługi fryzjerskie</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <main>
+        <article class="lewy">
+            <h2><a href="index.html">SALON FRYZJERSKI</a></h2>
+            <img src="obraz2.jpg" alt="Czesanie">
+        </article>
+
+        <article class="lewy">
+            <h3>Dziś promocja na strzyżenie włosów</h3>
+            <input type="radio" name="rodzaj" class="rodzaj">Krótkie<br>
+            <input type="radio" name="rodzaj" class="rodzaj">Średnie<br>
+            <input type="radio" name="rodzaj" class="rodzaj">Półdługie<br>
+            <input type="radio" name="rodzaj" class="rodzaj">Długie<br>
+            <button id="przycisk">Odkryj promocję</button>
+            <p id="wynik"></p>
+        </article>
+    </main>
+
+    <aside>
+        <article class="prawy">
+            <h2>MENU</h2>
+        </article>
+
+        <article class="prawy">
+            <ol>
+                <li><a href="fryzura.html">Strzyżenie</a>
+                    <ul>
+                        <li>krótkie</li>
+                        <li>średnie</li>
+                        <li>długie</li>
+                    </ul>
+                </li>
+                <li>Czesanie</li>
+                <li>Koloryzacja</li>
+            </ol>
+        </article>
+        
+        <article class="prawy">
+            <img src="obraz1.jpg" alt="Fryzjer">
+        </article>
+    </aside>
+
+    <footer class="stopka">
+        <p>Autor: 00000000000</p>
+    </footer>
+</body>
+
+    <script>
+        const rodzaj = document.querySelectorAll(".rodzaj");
+        const wynik = document.querySelector("#wynik");
+        const przycisk = document.querySelector("#przycisk");
+        const ceny = [25, 30, 40, 50];
+        let cena = 0;
+
+        const fn = () => {
+            rodzaj.forEach((el, i) => {
+            if (el.checked) {
+                wynik.textContent= `Cena strzyżenia: ${ceny[i]}`;
+
+            }
+        })
+        };
+
+        przycisk.addEventListener("click", fn);
+    </script>
+
+</html>
