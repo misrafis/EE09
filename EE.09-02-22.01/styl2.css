@@ -1,0 +1,58 @@
+body {
+	font-family: Helvetica;
+}
+
+.baner__lewy, .baner__prawy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	width: 25%;
+	height: 80px;
+}
+
+.baner__srodkowy {
+	background-color: rgb(70, 130, 180);
+	color: white;
+	width: 50%;
+	height: 80px;
+	text-align: center;
+}
+
+.glowny {
+	background-color: rgb(224, 255, 255);
+	padding: 40px;
+}
+
+.lewy, .prawy {
+	background-color: rgb(70, 130, 180);
+	width: 50%;
+	height: 200px;
+	text-align: center;
+}
+
+.stopka {
+	background-color: rgb(224, 255, 255);
+}
+
+table {
+	border: 1px solid blue;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+td {
+	border: 1px solid blue;
+}
+
+th {
+	border: 1px solid blue;
+	background-color: blue;
+	color: white;
+}
+
+.flex {
+	display: flex;
+}
+
+p {
+	margin: 0;
+}
