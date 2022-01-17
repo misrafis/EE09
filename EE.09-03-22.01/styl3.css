@@ -1,0 +1,44 @@
+body {
+	font-family: Arial;
+}
+
+.baner, .stopka {
+	background-color: SaddleBrown;
+	color: white;
+	height: 100px;
+}
+
+.baner__lewy, .stopka__lewy {
+	width: 55%;
+	font-size: 120%;
+}
+
+.baner__srodkowy, .stopka__srodkowy {
+	width: 25%;
+}
+
+.baner__prawy, .stopka__prawy {
+	width: 20%;
+	text-align: right;
+}
+
+.glowny {
+	background-color: Snow;
+	padding: 70px;
+}
+
+a {
+	border: 2px dotted SaddleBrown;
+	background-color: Snow;
+	color: SaddleBrown;
+	padding: 20px;
+	line-height: 100px;
+}
+
+ol {
+	list-style: lower-alpha;
+}
+
+.flex {
+	display: flex;
+}
